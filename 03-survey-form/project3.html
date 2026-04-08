@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Contact form</title>
+    <link rel="stylesheet" href="project3.css">
+</head>
+<body>
+    <div id="container">
+                <div class="step-active" id="step1">
+
+            <p class="step-tag">Step 01 — Contact</p>
+            <h2 class="step-title">Tell Us About Yourself</h2>
+            <p class="step-sub">We only use your details to follow up on your feedback.</p>
+        
+    <form action="#" method="post">
+        <div class="field-grid">
+        <div class="field">
+          
+          <label for="firstname">First Name </label>
+          <input 
+          type="text"
+          placeholder="vansh"
+          id="firstname"
+          name="firstname"
+          />
+       </div>
+      <div class="field">
+         <label for="lastname">Last Name </label>
+          <input
+          type="text"
+          placeholder="Ashapure"
+         id="lastname"
+         name="lastname"
+          />
+      </div>
+    </div>
+
+        <div class="field">
+            <label for="password">Password</label>
+           <input 
+           type="password"
+          placeholder="vansh@1234"
+          id="password"
+        />
+         </div>
+         <div class="field">
+             <label for="email"> Email</label>
+           <input 
+           type="email"
+          placeholder="vansh@gmail.com"
+          id="email"
+        />
+         </div>
+         <div class="field">
+             <label for="tel">Number</label>
+           <input 
+           type="number"
+          placeholder="93298***66"
+          id="tel"
+        />
+         </div>
+         <div class="field">
+             <label for="gender">Gender </label>
+          <select id="gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="none">none</option>
+          </select> 
+         </div>
+     <div class="field">
+        <label>Skills you are learning</label>
+        <div>
+          <input type="checkbox" id="html" name="skill" value="html">
+          <label for="html">HTML</label>
+        </div>
+         <div>
+       <input type="checkbox" id="css" name="skills" value="css">
+      <label for="css">CSS</label>
+      </div>
+       <div>
+       <input type="checkbox" id="js" name="skills" value="js">
+       <label for="js">JavaScript</label>
+        </div>
+       </div>
+       <div class="field">
+  <label>Experience Level</label>
+  <div>
+    <input type="radio" id="beginner" name="experience" value="beginner">
+    <label for="beginner">Beginner</label>
+  </div>
+  <div>
+    <input type="radio" id="intermediate" name="experience" value="intermediate">
+    <label for="intermediate">Intermediate</label>
+  </div>
+</div>
+<div class="field">
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="4" placeholder="Write your feedback..."></textarea>
+</div>
+
+         <div class="btn-row ">
+        <button type="submit" class="btn btn-primary">Continue →</button>
+       </div>
+
+     
+    </form>
+    </div>
+    </div>
+</body>
+</html>
