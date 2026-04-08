@@ -1,0 +1,74 @@
+body {
+font-family: 'DM Sans', sans-serif;  
+  margin: 0;
+    padding: 20px;
+}
+.card{
+    max-width: 800px;
+    width: 100%;
+    display: grid;
+     grid-template-columns: 1fr 1fr 1fr; 
+  gap: 2rem;
+  margin: auto;
+    
+}
+.card-pro {
+  border: 2px solid rgb(61, 61, 211);
+  transform: scale(1.05);
+}
+
+.badge {
+  display: inline-block;
+  background-color: rgb(61, 61, 211);
+  color: white;
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.card-sub{
+    
+    text-align: center;
+   border:1px solid gray ;
+   padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.price span {
+    font-size: 14px;
+    color: gray;
+}
+h1{
+    
+    text-align: center;
+}
+@media (max-width: 768px) {
+  .card {
+    grid-template-columns: 1fr; 
+  }
+}
+button{
+    background-color: rgb(61, 61, 211);
+    color: white;
+    border: 1px solid rgb(61, 61, 211);
+    border-radius: 3px;
+     padding: 10px 15px;
+       cursor: pointer;
+}
+button:hover {
+    background-color: rgb(40, 40, 180);
+}
+.features {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    margin: 8px 0;
+}
