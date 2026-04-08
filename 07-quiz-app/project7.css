@@ -1,0 +1,123 @@
+     :root {
+      --bg:        #080c10;
+      --surface:   #0e1318;
+      --surface-2: #141c24;
+      --border:    rgba(255,255,255,0.08);
+      --text:      #e8edf2; 
+      --muted:     #6b7a8d;
+      --label:     #9ba8b5;
+      --teal:      #00d2b4;
+      --radius:    10px;
+      --display:   'Syne', sans-serif;
+      --body:      'DM Sans', sans-serif;
+      --ease:      cubic-bezier(.22, 1, .36, 1);
+    }
+ 
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+    body {
+      background-color: var(--bg);
+      min-height: 100dvh;
+      display: grid;
+      place-items:center;
+      overflow-x: hidden;
+
+    }
+
+  #quiz-container{
+    position:relative;
+    width:100%;
+    padding: 2.5rem;
+    background-color: var(--surface);
+    max-width:580px;
+    border-radius: 20px;
+    border:1px solid var(--border);
+    box-shadow:0 32px 80px rgba(0, 0, 0, .5); ;
+  }
+  #progress{
+    font-family: var(--display);
+    color: var(--teal);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .68rem;
+     margin-bottom: .6rem;
+  }
+
+.hidden { display: none; }
+
+#question-text{
+  font-family: var(--display);
+   letter-spacing: .10rem;
+    color: var(--text);
+    font-weight: 600;
+    margin-bottom: .6rem;
+    
+}
+.option-btn {
+    width: 100%;
+      background-color: var(--surface-2);
+      color: var(--text);
+      font-size: .85rem;
+      letter-spacing: .06em;
+      font-weight: 500;
+       border: 1px solid var(--border);
+       border-radius: var(--radius);
+       padding: .75rem 1rem;
+       outline: none;
+        margin-bottom: 0.6rem;
+  cursor: pointer;
+    transition: border-color .25s, box-shadow .25s, background .25s;
+
+}
+
+.option-btn.correct {
+  background-color: green;
+  color: white;
+}
+
+.option-btn.wrong {
+  background-color: red;
+  color: white;
+}
+#next-btn {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  background-color: var(--teal);
+  color: #080c10;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#next-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+#result-screen {
+  text-align: center;
+}
+
+#result-screen h2 {
+  color: var(--text);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+#score-text {
+  color: var(--teal);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+#restart-btn {
+  padding: 0.75rem 2rem;
+  background-color: var(--teal);
+  color: #080c10;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 700;
+  cursor: pointer;
+}
