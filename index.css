@@ -1,0 +1,64 @@
+#photo {
+    
+  height: 180px; 
+  width: 150px;
+
+
+ 
+    border-radius: 8px;
+}
+
+
+.box{
+    background-color:lightskyblue;
+    display: flex;
+   min-height: 400px;
+    max-width: 900px;
+width: 100%;
+    padding-left: 50px;
+    flex-direction: row;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    margin: 40px auto;
+   
+   
+}
+h1 {
+    text-align: center;
+    
+    
+}
+.image {
+    
+    display:flex;
+    height: 220px;
+    width:200px;
+flex-direction: column;
+align-self: center;
+ justify-content: center;
+    
+
+}
+.info {
+font-size: 1.1rem;
+align-self: center;
+
+}
+.social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+    background-color: steelblue;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.social-links a:hover {
+    background-color: dodgerblue;
+}
