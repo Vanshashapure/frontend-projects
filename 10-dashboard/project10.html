@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+      <link rel="stylesheet" href="project10.css">
+</head>
+<body>
+    <div class="Dashboard">
+
+        <aside class="sidebar">
+            <div class="sidebar-logo">Dashboard</div>
+            <nav class="sidebar-nav">
+            <a href="#" class="nav-item active">Overview</a>
+            <a href="#" class="nav-item">Analytics</a>
+            <a href="#" class="nav-item">Users</a>
+            <a href="#" class="nav-item">Settings</a>
+            </nav>
+            
+        </aside>
+        <main class="main-content">
+
+     <header class="main-header">
+      <h1>Overview</h1>
+      <span class="date">April 2026</span>
+     </header>
+
+         <div class="stats-grid">
+      <div class="stat-card">
+        <p class="stat-label">Total Users</p>
+        <h2 class="stat-value">24,521</h2>
+        <span class="stat-change positive">+12%</span>
+      </div>
+      <div class="stat-card">
+        <p class="stat-label">Revenue</p>
+        <h2 class="stat-value">₹1,42,000</h2>
+        <span class="stat-change positive">+8%</span>
+      </div>
+      <div class="stat-card">
+        <p class="stat-label">Orders</p>
+        <h2 class="stat-value">1,893</h2>
+        <span class="stat-change negative">-3%</span>
+      </div>
+      <div class="stat-card">
+        <p class="stat-label">Active Sessions</p>
+        <h2 class="stat-value">432</h2>
+        <span class="stat-change positive">+5%</span>
+      </div>
+    </div>
+ <!-- Chart -->
+    <div class="chart-section">
+      <h3>Monthly Revenue</h3>
+      <div class="chart-wrapper">
+        <canvas id="revenueChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="table-section">
+      <h3>Recent Orders</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Customer</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#1001</td>
+            <td>Rahul Sharma</td>
+            <td>₹2,400</td>
+            <td><span class="badge success">Delivered</span></td>
+          </tr>
+          <tr>
+            <td>#1002</td>
+            <td>Priya Mehta</td>
+            <td>₹1,200</td>
+            <td><span class="badge pending">Pending</span></td>
+          </tr>
+          <tr>
+            <td>#1003</td>
+            <td>Amit Singh</td>
+            <td>₹3,800</td>
+            <td><span class="badge success">Delivered</span></td>
+          </tr>
+          <tr>
+            <td>#1004</td>
+            <td>Neha Gupta</td>
+            <td>₹950</td>
+            <td><span class="badge failed">Cancelled</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+</div>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script src="project10.js"></script>
+</body>
+</html>

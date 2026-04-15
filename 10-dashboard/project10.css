@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+.Dashboard{
+    display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+}
+.sidebar{
+ background-color: #1a1a2e;
+  color: white;
+  padding: 2rem 1rem;
+}
+.sidebar-logo{
+   font-size: 2.4rem;
+   font-weight: 500;
+  margin-bottom: 20px;
+  
+}
+.sidebar-nav{
+ font-size: 1rem;
+display: grid;
+letter-spacing:  0.05em;
+gap: 1.3rem;
+}
+.nav-item {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 0.25rem;
+  transition: all 0.2s;
+}
+
+.nav-item:hover, .nav-item.active {
+  background-color: rgba(255,255,255,0.1);
+  color: white;
+}
+.main-content {
+  padding: 2rem;
+  background-color: #f0f2f5;
+}
+.main-header{
+     display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+}
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.stat-change.positive { color: green; }
+.stat-change.negative { color: red; }
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.data-table th {
+  font-weight: 600;
+  color: gray;
+  font-size: 0.85rem;
+}
+
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge.success {
+  background-color: #e6f4ea;
+  color: green;
+}
+
+.badge.pending {
+  background-color: #fff3e0;
+  color: orange;
+}
+
+.badge.failed {
+  background-color: #fce8e8;
+  color: red;
+}
+
+.chart-wrapper {
+  height: 300px;
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+@media (max-width: 768px) {
+  .Dashboard {
+    grid-template-columns: 1fr;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sidebar {
+    display: none;
+  }
+}
